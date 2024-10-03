@@ -9,10 +9,31 @@
 
 // https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
 
-const abbrevName = (name) =>
-  name
-    .split(" ")
-    .map((item) => item[0].toUpperCase())
-    .join(".");
+// const abbrevName = (name) =>
+//   name
+//     .split(" ")
+//     .map((item) => item[0].toUpperCase())
+//     .join(".");
 
-console.log(abbrevName("Hossein Yasinzadeh"));
+// console.log(abbrevName("Hossein Yasinzadeh"));
+
+// =================================================================
+
+// https://www.codewars.com/kata/5bb904724c47249b10000131
+const points = (games) => {
+  return games
+    .map((el) => el.split(":").map(Number))
+    .reduce((acc, el) => {
+      if (el[0] > el[1]) {
+        return acc + 3;
+      } else if (el[0] === el[1]) {
+        return acc + 1;
+      } else {
+        return acc;
+      }
+    }, 0);
+};
+
+console.log(
+  points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"])
+);
