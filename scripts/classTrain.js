@@ -51,6 +51,3 @@
 function reverseWords(str) {
   return str.split(" ").reverse().join("");
 }
-
-reverseWords("Hossein Yasinzadeh Azarshahr");
-console.log("abc".reverse);
