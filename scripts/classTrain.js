@@ -20,20 +20,28 @@
 // =================================================================
 
 // https://www.codewars.com/kata/5bb904724c47249b10000131
-const points = (games) => {
-  return games
-    .map((el) => el.split(":").map(Number))
-    .reduce((acc, el) => {
-      if (el[0] > el[1]) {
-        return acc + 3;
-      } else if (el[0] === el[1]) {
-        return acc + 1;
-      } else {
-        return acc;
-      }
-    }, 0);
-};
+// const points = (games) => {
+//   return games
+//     .map((el) => el.split(":").map(Number))
+//     .reduce((acc, el) => {
+//       if (el[0] > el[1]) {
+//         return acc + 3;
+//       } else if (el[0] === el[1]) {
+//         return acc + 1;
+//       } else {
+//         return acc;
+//       }
+//     }, 0);
+// };
 
-console.log(
-  points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"])
-);
+// console.log(
+//   points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"])
+// );
+
+// =========================================================================
+
+// https://www.codewars.com/kata/57e76bc428d6fbc2d500036d
+
+const stringToArray = (string) => string.split(" ");
+
+console.log(stringToArray("hossei java script"));
