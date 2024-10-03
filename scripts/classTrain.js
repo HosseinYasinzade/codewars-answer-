@@ -42,6 +42,15 @@
 
 // https://www.codewars.com/kata/57e76bc428d6fbc2d500036d
 
-const stringToArray = (string) => string.split(" ");
+// const stringToArray = (string) => string.split(" ");
 
-console.log(stringToArray("hossei java script"));
+// console.log(stringToArray("hossei java script"));
+
+// =============================================
+
+function reverseWords(str) {
+  return str.split(" ").reverse().join("");
+}
+
+reverseWords("Hossein Yasinzadeh Azarshahr");
+console.log("abc".reverse);
